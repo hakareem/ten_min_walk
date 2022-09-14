@@ -25,6 +25,13 @@ public class AppTest {
         assertEquals(false, test.ten_minute_walk(list));
     }
 
+    @Test public void testGivenALongList() {
+        App test = new App();
+        char[] list = {'w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w' ,'s'};
+
+        assertEquals(false, test.ten_minute_walk(list));
+    }
+
 }
 
 
