@@ -3,6 +3,14 @@ package ten_minute_walk;
 public class App {
     public boolean ten_minute_walk(char[] walk) {
 
+    // ten_minute_walk?(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']) # => true
+
+        // north counter: n n 
+        // south counter: s s
+
+        // west counter:  w w w
+        // east counter: e e e
+
         int y = 0; // this will keep track of north and south
         int x = 0; // this will keep track of west and east
 
@@ -37,8 +45,12 @@ public class App {
 // each block take 1 min to traverse 
 // return true if walk takes 10 mins
 //  the walker should be back where they began
+// there should at 10 chars in the arr
+
+
 
 // TEST CASES:
-// ten_minute_walk?(['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w']) # => true
+
+
 // ten_minute_walk?(['w', 's', 'e', 'n', 'n', 'e', 's', 'w', 'w', 'w']) # => false
 // ten_minute_walk?(['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n']) # => false
